@@ -1,9 +1,5 @@
 # Side Pot
 
-This application serves as an example for the information you must provide in your **Start Up `README.md`** file for each phase of your development. **You only need to fill in the section for the current deliverable** when you submit that deliverable in Canvas. This lets the TA know exactly what should be graded.
-
-The **Specification Deliverable** section defines what your application will do. The remaining sections mirror the rubric for future deliverables and will be filled out later as those features are implemented.
-
 ---
 
 ## Specification Deliverable
