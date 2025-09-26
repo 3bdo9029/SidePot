@@ -66,3 +66,40 @@ I am going to use the required technologies in the following ways:
   - **3rd-party API**: `GET /api/fx?base=EUR&amount=1000` (server fetch to free FX API; demonstrates a service I didn’t write)
 - **DB/Login** – Persist users (with bcrypt hash), profiles, and contributions (MongoDB/PostgreSQL, or a simple JSON DB for class). Register & login users; restrict contribution routes to authenticated users.
 - **WebSocket** – Broadcast `savings_event` when contributions are added so all connected clients update their live ticker in real time.
+
+
+## 🧩 Startup Deliverable: Initial HTML Structure for SidePot
+
+### 📄 Overview
+This commit includes the foundational HTML structure for the **SidePot** application — a self-employed planner for taxes and retirement contributions. The layout is based on wireframes and assignment specifications, and provides semantic structure, multi-page navigation, and placeholders for future functionality.
+
+---
+
+### ✅ What Was Added
+
+#### 🔹 `index.html` (Homepage)
+- Welcome message and login/register form
+- Platform overview with feature explanation
+- PLaceholder image added (`placeholder.jpg`)
+- Navigation menu linking to other pages
+- GitHub repo prominently linked in footer
+- Placeholder: WebSocket-based savings ticker
+- Placeholder: Display of user email after login
+
+#### 🔹 `dashboard.html`
+- Placeholder UI for plan selection (Solo 401(k), SEP IRA, Roth IRA)
+- Quarterly tax estimator
+- Contribution table (DB placeholder)
+- WebSocket live feed
+- Next deadline and reminder sections
+
+#### 🔹 `planner.html`
+- Inputs: income, filing status, state, expenses
+- Estimated set-aside percentage and plan limits
+- 3rd-party API placeholder for FX conversion
+- "Record set-aside" interface stub
+
+#### 🔹 `contributions.html`
+- Contribution form and table (database placeholder)
+- Live feed of anonymized activity (WebSocket placeholder)
+- Button to export contributions as CSV
