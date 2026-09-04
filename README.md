@@ -68,7 +68,7 @@ I am going to use the required technologies in the following ways:
 - **WebSocket** – Broadcast `savings_event` when contributions are added so all connected clients update their live ticker in real time.
 
 
-## 🧩 Startup Deliverable: Initial HTML Structure for SidePot
+## HTML Deliverable
 
 ### 📄 Overview
 This commit includes the foundational HTML structure for the **SidePot** application — a self-employed planner for taxes and retirement contributions. The layout is based on wireframes and assignment specifications, and provides semantic structure, multi-page navigation, and placeholders for future functionality.
@@ -80,10 +80,10 @@ This commit includes the foundational HTML structure for the **SidePot** applica
 #### 🔹 `index.html` (Homepage)
 - Welcome message and login/register form
 - Platform overview with feature explanation
-- PLaceholder image added (`placeholder.jpg`)
+- Hero image with descriptive `alt` text (`hero-tax-planner.jpg`)
 - Navigation menu linking to other pages
 - GitHub repo prominently linked in footer
-- Placeholder: WebSocket-based savings ticker
+- Placeholder: WebSocket savings ticker in `<div id="savings-ticker">`
 - Placeholder: Display of user email after login
 
 #### 🔹 `dashboard.html`
@@ -103,3 +103,17 @@ This commit includes the foundational HTML structure for the **SidePot** applica
 - Contribution form and table (database placeholder)
 - Live feed of anonymized activity (WebSocket placeholder)
 - Button to export contributions as CSV
+
+### ✅ Rubric Checklist
+
+- [x] **HTML pages** - Four pages, one for each component of the application: `index.html` (login / landing), `dashboard.html`, `planner.html`, and `contributions.html`.
+- [x] **Proper HTML tags** - Every page uses `<!DOCTYPE html>`, `<html lang="en">`, `<head>`, and `<body>`, with semantic structure throughout: `<header>`, `<nav>`, `<main>`, `<section>`, `<form>`, `<table>`, and `<footer>`.
+- [x] **Character set and viewport** - Each page declares `<meta charset="utf-8">` and `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+- [x] **Navigation / links** - A shared `<nav>` links every page to the other three, and the footer links out to the GitHub repository for this project.
+- [x] **Text** - Descriptive text on every page explaining the tax set-aside estimate, the retirement plan comparison cards, and the contribution history.
+- [x] **Images** - `hero-tax-planner.jpg` on the landing page, with descriptive `alt` text.
+- [x] **Login placeholder** - `index.html` contains an accessible register / login form built from `<label>` and `<input>` pairs for email and password. The logged-in user's name is shown in the header of the other pages.
+- [x] **Database data placeholder** - `contributions.html` shows a `<table>` of recorded contributions that will later be loaded from the database.
+- [x] **WebSocket placeholder** - The live savings ticker lives in `<div id="savings-ticker">` on `dashboard.html` and displays placeholder "Someone just set aside \$X" events.
+- [x] **3rd party service placeholder** - The FX conversion helper on `planner.html`, with a placeholder result that the server-side call to the free FX API will fill in.
+- [x] **Application logic placeholder** - Static example values for the monthly set-aside percentage and dollar amount, which `POST /api/planner/estimate` will compute later.
