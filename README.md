@@ -1,4 +1,4 @@
-# Side Pot
+# Side Pot - I love web programming
 
 ---
 
