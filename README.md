@@ -1,5 +1,7 @@
 # Side Pot - I love web programming
 https://afarghali.com
+https://startup.afarghali.com/
+https://simon.afarghali.com/
 
 ---
 
