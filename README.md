@@ -1,4 +1,4 @@
-![# Side Pot - I love web programming](afarghali.com)
+# Side Pot - I love web programming - afarghali.com
 
 ---
 
